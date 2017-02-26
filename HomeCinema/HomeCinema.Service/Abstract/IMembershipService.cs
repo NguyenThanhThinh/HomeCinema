@@ -1,4 +1,5 @@
 ﻿using HomeCinema.Entities.Entities;
+using HomeCinema.Services.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,7 @@ namespace HomeCinema.Service.Abstract
         MembershipContext ValidateUser(string username, string password);
         User CreateUser(string username, string email, string password, int[] roles);
         User GetUser(int userId);
-        List<Role> GetUserRoles(string username);
+        List<Role> GetUserRoles(string username);
+
     }
 }
